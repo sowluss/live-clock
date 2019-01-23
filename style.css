@@ -27,5 +27,24 @@ body {
   letter-spacing: 2px;
   font-weight: 400;
   margin-left: 80px;
-  margin-bottom: -35px;
+  margin-bottom: -30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.seconds {
+  font-weight: 400;
+  font-size: 55px;
+  letter-spacing: 2px;
+  margin-left: 116px;
+}
+
+.week div {
+  display: inline-block;
+}
+
+.week .day {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  color: #fff;
 }
