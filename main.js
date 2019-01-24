@@ -24,4 +24,30 @@
       }
     })
 
+    setInterval(function () {
+      let seconds = new Date().getSeconds();
+      if (seconds < 10) {
+        $('.seconds').html('0' + seconds);
+      } else {
+        $('.seconds').html(seconds);
+      }
+    }, 1000);
+
+    let weekday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    setInterval(function () {
+      let d = new Date();
+      let dow = weekday[d.getDay()];
+      let mo = month[d.getMonth()];
+      let num = d.getDate();
+      let date = mo + " " + num;
+      let yr = d.getFullYear();
+      $('.day').html(dow);
+      $('.month').html(date);
+      $('.year').html(yr);
+
+
+    }), 1000;
+
   })
